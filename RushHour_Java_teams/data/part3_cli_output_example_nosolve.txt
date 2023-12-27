@@ -1,0 +1,37 @@
+Enter a Rush Hour filename: data/07_02.csv
+
+Type 'help' for help menu.
+
+--OOOP
+----AP
+RR--AP < EXIT
+-BB---
+CC---Q
+-----Q
+
+Moves: 0
+
+> B RIGHT
+
+--OOOP
+----AP
+RR--AP < EXIT
+--BB--
+CC---Q
+-----Q
+
+Moves: 1
+
+> Q UP
+
+--OOOP
+----AP
+RR--AP < EXIT
+--BB-Q
+CC---Q
+------
+
+Moves: 2
+
+> solve
+No solution found

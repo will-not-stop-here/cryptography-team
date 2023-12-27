@@ -1,0 +1,233 @@
+Enter a Rush Hour filename: data/03_00.csv
+
+Type 'help' for help menu.
+
+--O---
+--OA--
+RROA-- < EXIT
+------
+------
+------
+
+Moves: 0
+
+> O UP
+Invalid move: Vehicle is at the edge of the board
+
+--O---
+--OA--
+RROA-- < EXIT
+------
+------
+------
+
+Moves: 0
+
+> R RIGHT
+Invalid move: Vehicle is obstructed
+
+--O---
+--OA--
+RROA-- < EXIT
+------
+------
+------
+
+Moves: 0
+
+> Z UP
+Invalid move: Vehicle does not exist
+
+--O---
+--OA--
+RROA-- < EXIT
+------
+------
+------
+
+Moves: 0
+
+> R UP
+Invalid move: UP is not a valid direction for this vehicle
+
+--O---
+--OA--
+RROA-- < EXIT
+------
+------
+------
+
+Moves: 0
+
+> unknown
+Invalid command.  Type 'help' for menu.
+
+--O---
+--OA--
+RROA-- < EXIT
+------
+------
+------
+
+Moves: 0
+
+> help
+Help Menu:
+        help - this menu
+        quit - quit
+        hint - display a valid move
+        reset - reset the game
+        <symbol> <UP|DOWN|LEFT|RIGHT> - move the vehicle one space in the given direction
+
+--O---
+--OA--
+RROA-- < EXIT
+------
+------
+------
+
+Moves: 0
+
+> hint
+Try A UP
+
+--O---
+--OA--
+RROA-- < EXIT
+------
+------
+------
+
+Moves: 0
+
+> A UP
+
+--OA--
+--OA--
+RRO--- < EXIT
+------
+------
+------
+
+Moves: 1
+
+> reset
+New Game
+
+--O---
+--OA--
+RROA-- < EXIT
+------
+------
+------
+
+Moves: 0
+
+> A UP
+
+--OA--
+--OA--
+RRO--- < EXIT
+------
+------
+------
+
+Moves: 1
+
+> O DOWN
+
+---A--
+--OA--
+RRO--- < EXIT
+--O---
+------
+------
+
+Moves: 2
+
+> O DOWN
+
+---A--
+---A--
+RRO--- < EXIT
+--O---
+--O---
+------
+
+Moves: 3
+
+> O DOWN
+
+---A--
+---A--
+RR---- < EXIT
+--O---
+--O---
+--O---
+
+Moves: 4
+
+> R RIGHT
+
+---A--
+---A--
+-RR--- < EXIT
+--O---
+--O---
+--O---
+
+Moves: 5
+
+> R RIGHT
+
+---A--
+---A--
+--RR-- < EXIT
+--O---
+--O---
+--O---
+
+Moves: 6
+
+> R RIGHT
+
+---A--
+---A--
+---RR- < EXIT
+--O---
+--O---
+--O---
+
+Moves: 7
+
+> R RIGHT
+
+---A--
+---A--
+----RR < EXIT
+--O---
+--O---
+--O---
+
+Moves: 8
+
+Well done!
+Type 'reset' to play again
+
+> O UP
+Type 'reset' to play again
+
+> reset
+New Game
+
+--O---
+--OA--
+RROA-- < EXIT
+------
+------
+------
+
+Moves: 0
+
+> quit
+Goodbye!

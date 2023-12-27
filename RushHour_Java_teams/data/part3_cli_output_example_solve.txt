@@ -1,0 +1,192 @@
+Enter a Rush Hour filename: data/06_00.csv
+
+Type 'help' for help menu.
+
+------
+---OOO
+RR-AB- < EXIT
+P--AB-
+PQQQ--
+P-----
+
+Moves: 0
+
+> O LEFT
+
+------
+--OOO-
+RR-AB- < EXIT
+P--AB-
+PQQQ--
+P-----
+
+Moves: 1
+
+> B DOWN
+
+------
+--OOO-
+RR-A-- < EXIT
+P--AB-
+PQQQB-
+P-----
+
+Moves: 2
+
+> R RIGHT
+
+------
+--OOO-
+-RRA-- < EXIT
+P--AB-
+PQQQB-
+P-----
+
+Moves: 3
+
+> solve
+
+Move: P UP
+
+------
+--OOO-
+PRRA-- < EXIT
+P--AB-
+PQQQB-
+------
+
+Moves: 4
+
+Move: P UP
+
+------
+P-OOO-
+PRRA-- < EXIT
+P--AB-
+-QQQB-
+------
+
+Moves: 5
+
+Move: P UP
+
+P-----
+P-OOO-
+PRRA-- < EXIT
+---AB-
+-QQQB-
+------
+
+Moves: 6
+
+Move: Q LEFT
+
+P-----
+P-OOO-
+PRRA-- < EXIT
+---AB-
+QQQ-B-
+------
+
+Moves: 7
+
+Move: A DOWN
+
+P-----
+P-OOO-
+PRR--- < EXIT
+---AB-
+QQQAB-
+------
+
+Moves: 8
+
+Move: P DOWN
+
+------
+P-OOO-
+PRR--- < EXIT
+P--AB-
+QQQAB-
+------
+
+Moves: 9
+
+Move: A DOWN
+
+------
+P-OOO-
+PRR--- < EXIT
+P---B-
+QQQAB-
+---A--
+
+Moves: 10
+
+Move: R RIGHT
+
+------
+P-OOO-
+P-RR-- < EXIT
+P---B-
+QQQAB-
+---A--
+
+Moves: 11
+
+Move: P UP
+
+P-----
+P-OOO-
+P-RR-- < EXIT
+----B-
+QQQAB-
+---A--
+
+Moves: 12
+
+Move: R RIGHT
+
+P-----
+P-OOO-
+P--RR- < EXIT
+----B-
+QQQAB-
+---A--
+
+Moves: 13
+
+Move: A UP
+
+P-----
+P-OOO-
+P--RR- < EXIT
+---AB-
+QQQAB-
+------
+
+Moves: 14
+
+Move: P DOWN
+
+------
+P-OOO-
+P--RR- < EXIT
+P--AB-
+QQQAB-
+------
+
+Moves: 15
+
+Move: R RIGHT
+
+------
+P-OOO-
+P---RR < EXIT
+P--AB-
+QQQAB-
+------
+
+Moves: 16
+Well Done!!!
+Type 'reset' to play again

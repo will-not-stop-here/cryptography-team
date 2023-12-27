@@ -1,0 +1,75 @@
+
+第一部分 会议计划信息：
+会议：周六 4/1 @ 4pm 在 Discord 上
+焦点：
+
+RushHour 类构造函数
+可能为 possMove 算法设计哈希
+CLI 类的游戏设计
+分配未完成的任务
+任务/编码分工：
+
+编码 RushHourCLI = Lennard
+编码 RushHour 方法：
+-- 构造函数（文件解析器）= Emma -- 已完成
+-- moveVehicle = Daphne -- 已完成
+-- getPossibleMoves = Emma - 今晚稍后进行 - 已完成
+-- toString（打印游戏板）= Lennard -- 已完成
+单元测试：
+-- Direction（枚举）= Emma -- 已完成
+-- Move（类）首先在类中创建 toString = Emma
+-- Position（类）= Emma -- 已完成
+-- Vehicle（类）= Daphne -- 已完成
+-- RushHour（类）= Lenny -- 已完成
+CLI 不需要通过单元测试进行测试
+
+第二部分 会议计划信息（周一，4/3 到 周日，4/9）：
+会议：
+
+周五，4/7 在课堂上
+周六，4/8 @ 6-8pm 在 Discord 上
+周二，4/11 @ 6-7pm (检查会议) 在 Discord 上
+焦点：
+
+(周五) GUI 设计与功能
+(周六) 确定 GUI 事件处理/更新的逻辑
+(周六) 分配编码任务
+(周二) 优化和测试 GUI
+任务/编码分工：
+
+需要进行单元测试（已过期）：
+-- Move（类）首先在类中创建 toString = Emma >> 已完成
+
+创建 GUI = Daphne（在周六要做） >> 已完成
+
+事件处理和观察者方法：
+
+resetButton 和 resetGame()（事件处理程序方法）= Emma
+hintButton 和 getHint()（事件处理程序方法）= Lennard >> 已完成
+vehicleFrontButton 和 moveVehicleForwards()（事件处理程序方法）= Lennard >> 已完成
+vehicleBackButton 和 moveVehicleBackwards()（事件处理程序方法）= Lennard >> 已完成
+vehicleMoved()（具体观察者方法 - 车辆移动后更新板）= Emma
+第三周 会议（周一，4/10 到 周日，4/16）：
+作业在周三发布，截止日期为周一午夜
+
+周五，4/14 @ 5-6:50 可能会延长到更长的课程时间
+周日，4/16 @ TBD (检查会议)
+周四和周五的任务：
+
+PSS 活动 >> 已完成
+回顾作业 >> 已完成
+更新简单的代码并创建方法的桩代码
+决定要使用的逻辑
+分配任务和确定完成时间表
+任务/编码分工：
+
+需要进行单元测试：
+-- RushHour（类）复制构造函数（确保不更新原始对象）= Emma
+
+更新模型 (下一步所需)：
+-- RushHour（类）添加复制构造函数 = Emma
+-- RushHourSolver（类）= Emma
+
+更新视图
+-- 更新 CLI（类）以使用 Backtracker 的 solve() = Lennard
+-- 更新 GUI（类）以使用 Backtracker 的 solve() = Daphne

@@ -1,0 +1,60 @@
+**************************** Part 1 : T H E  G U I ********************************************
+
+    /** 使用 MVC 设计模型 - GUI - MVC 设计模型的工作原理：
+    * 步骤1：创建 EventHandler 类，以处理 GUI 中执行的所需事件
+    *              （注意：最初可能会桩代码化此类，并在步骤3返回以完成它。）
+    * 步骤2：调用 EventHandler（setOnAction(new EventHandler(args)）并注册（传入）MODEL 将通知的具体
+    *              观察者（Changer）MODEL 中的“registration”方法
+    *              （例如：setOnChange(new Observer(args)））
+    * 步骤3：EventHandler（或其他动作方法）调用与 GUI 中发生/启动的更改相关联的 MODEL 中的方法（例如：按钮点击）。
+    * 步骤4：一旦 MODEL 更新，它会通知（具体）观察者；具体观察者反过来处理 MODEL 更新，并按设计更改 GUI。 （注意：某些更改可能在 EventHandler 或动作方法中处理）
+
+    * 在 GUI 中：1）按钮调用 EventHandler（RushHourEvent）并使用 MODEL（RushHour）注册具体观察者（RushHourChanger）
+    *              2）EventHandler 还调用 GUI 中的适当动作方法
+    *              2）动作方法然后调用与更改相关的 MODEL 中的方法
+    *              3）MODEL 处理来自输入的更改（即：移动或重置）并在无效时抛出异常，或通知（具体）观察者更改并提供所需的信息
+    *              3）（具体）观察者解释 MODEL 的更改信息并更新 gameBoard 上的 SPOT(S)。动作方法更新其他部分（即：gameStatus 和 moveStatus Labels）
+    */
+
+
+    /* 
+    * GUI 类的 EVENT HANDLER
+    * @EventHandler 此类捕获 GUI 中由用户单击按钮触发的 ActionEvents。它确定输入类型（即：移动或重置板）并调用 GUI 中的适当动作方法。
+    * 
+    * 注意：如果单击的按钮没有关联的操作，则会抛出异常。
+    */
+
+
+ /* 
+ * GUI 类的 CONCRETE OBSERVER "THE CHANGER"
+ * @ConcreteObserver 此类实现 RushHourObserver 接口。它包含用于处理 MODEL（RushHour）中的 VEHICLES 上所做更改的方法。
+ *                   然后，它根据设计在 GUI（RushHourGUI）上更新 VEHICLES。
+ * 
+ * 注意：从更改中的所有其他更新都在 GUI 中处理。
+ */
+
+
+**************************** Part 2 : T H E  M O D E L ********************************************
+
+     /** 使用 MVC 设计模型 - 向 MODEL 类添加观察者
+     * 
+     * （注意：此类是此程序的 MODEL 类！）
+     * 
+     * 步骤1：创建 Observer 接口 - 它应包含处理 MODEL 中所做更改的方法（需要通过 CONCRETE 观察者进行反映）。
+     *          包括 CONCRETE 观察者处理更改所需的参数。
+     * 步骤2：将观察者（接口）对象添加到 MODEL - 这确保实现此接口的任何 CONCRETE 观察者都可以使用（即：多态性）。
+     *          >>> 例如：private ObserverInterface observer;
+     * 步骤3：添加 SET 和 NOTIFY 具体观察者的方法（参见下面的示例）：
+     *          >>> 例如：setOnChange(ObserverInterface observer) {
+     *                      this.observer = observer;
+     *                  }
+     *          >>> 例如：notifyObserver(--来自 ObserverInterface 方法的参数--） {
+     *                      // 验证分配的具体观察者！= null
+     *                      // 然后，调用观察者中的方法以在 GUI 中启动更改
+     *                  }
+     * 步骤4：将“notifyObserver(args)”调用添加到 MODEL 中任何在 GUI 中创建更改的方法中（即：执行了 GUI 需要更新并显示更改的方法）。
+     * 步骤5：创建 CONCRETE Observer 类 - 从存根（字段和构造函数）开始，并覆盖方法。一旦 GUI 实施完成，就可以完成观察者。
+     *          （注意：CONCRETE 观察者的字段和构造函数参数不需要匹配 INTERFACE 观察者的那些（仅需要匹配 OVERRIDE 方法的参数）。
+     *          可能需要将要更新的 GUI 作为字段和构造函数参数添加！）
+     */
+
